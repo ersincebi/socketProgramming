@@ -1,4 +1,4 @@
-	In this project i use UDP protocol. I didn’t use an IDE so for running if you gonna use an IDE you need to run client.java then loadBalancer.java but, if you don’t first you need to compile all project files first javac *.java then in separate terminal screens with command java client, in the other terminal java loadBalancer.
+	In this project i use UDP protocol. You need to run client.java then loadBalancer.java.
 
 	I use semaphore and multicore programming in this project. All configurations are preset, for running properly you need 1 for client, 3 for server, 2 cores for loadBalancer in total 6 cores for running the application. For decreasing core requirement you can’t do anything for client and loadBalancer but for server you need to change ‘hms(how many servers, in short)’ variable for decreasing the server number.
 
