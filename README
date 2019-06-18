@@ -6,4 +6,4 @@
 
 	There is explanation for every function in every files method. I explain them in comments briefly, what it returns and what kind of parameters they take. Also write unit test for some functions so you can see if they work right or not. In test function I didn't use Assert method because its not comming natively you need to make some configurations to run on your computer. So instead of Assert, I use if-else method to show the result.
 	
-	ACK method needs to be added!!!! Fuck, stupid! How could you miss that!
+	ACK method needs to be added!
