@@ -1,3 +1,4 @@
+# Load Balancer with java socket Programming
 	In this project i use UDP protocol. You need to run client.java then loadBalancer.java.
 
 	I use semaphore and multicore programming in this project. All configurations are preset, for running properly you need 1 for client, 3 for server, 2 cores for loadBalancer in total 6 cores for running the application. For decreasing core requirement you can’t do anything for client and loadBalancer but for server you need to change ‘hms(how many servers, in short)’ variable for decreasing the server number.
@@ -7,3 +8,11 @@
 	There is explanation for every function in every files method. I explain them in comments briefly, what it returns and what kind of parameters they take. Also write unit test for some functions so you can see if they work right or not. In test function I didn't use Assert method because its not comming natively you need to make some configurations to run on your computer. So instead of Assert, I use if-else method to show the result.
 	
 	ACK method needs to be added!
+	
+
+## Authors
+- [Ersin ÇEBİ](https://github.com/ersincebi)
+    
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
