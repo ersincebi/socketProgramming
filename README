@@ -6,8 +6,7 @@
 	As a summary client sends packets as random numbers 1 to 100, to loadBalancer, in loadBalancer part we have loadLimit set to 30, this represents the limit that each server can process. loadBalancer takes the packet splits in to pieces according to loadLimit takes those pieces into buffer queue and distributes each servers job queue if they are available. There is a flag inside serverlist.java sts this represents status for each server settled inside manageServer.java, it gives answer to the status of server ‘If server ready or busy?’ if its ready balancer loads to next values into it’s job queue when server finishes it’s process gives ready flag and takes next job in queue. And it continues until you terminate the application. There is two main function inside loadBalance.java, one is run() thread function, the other is balance() function, both runs on separate cores. One buffers the received packet while the other receives the packet. This should done in parallel but this creates an error because balance function can try to balance packets even if run() function, didn’t receives any. So for avoiding this i create a simple semaphore inside loadBalance.java with trigger variable. Variable changes between 1 and 0, 1 for signal, 0 is for wait. run() inside loadBalancer.java and closeServer() inside server.java can manipulate this semaphore.
 
 	There is explanation for every function in every files method. I explain them in comments briefly, what it returns and what kind of parameters they take. Also write unit test for some functions so you can see if they work right or not. In test function I didn't use Assert method because its not comming natively you need to make some configurations to run on your computer. So instead of Assert, I use if-else method to show the result.
-	
-	ACK method needs to be added!
+
 	
 
 ## Authors
